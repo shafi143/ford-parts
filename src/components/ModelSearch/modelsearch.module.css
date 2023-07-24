@@ -1,0 +1,73 @@
+.selectyear{
+    padding: 10px 30px;
+        border-radius: 7px;
+        font-size: 20px;
+        height: 50px;
+        width: 250px;
+}
+.model{
+    /* margin-top: 40px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    gap: 20px; */
+    margin-top: 40px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.selectyear option{
+    padding: 1em 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #2d96cd;
+    border-top: 1px solid #e6e6e6;
+}
+.searchCatalog{
+    background-color: #0276b3;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    /* height: 5rem!important; */
+    letter-spacing: .15rem;
+   
+    margin: 0;
+    padding: 0 1.8rem;
+    
+}
+.disabled_button{
+    background-color: #145c84!important;
+    border: 0;
+    border-radius: 3px;
+    cursor:not-allowed !important;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+   
+    font-size: 20px;
+    /* height: 5rem!important; */
+    letter-spacing: .15rem;
+   
+    margin: 0;
+    padding: 0 1.8rem;
+    height: 50px;
+    width: 250px;
+}
+.searchCatalog:hover{
+background-color: white;
+color: #0276b3;
+}
+.lastContent{
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+}

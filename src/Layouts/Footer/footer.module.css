@@ -1,0 +1,36 @@
+
+.logo{
+    width: 280px;
+    height: 103px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.lastSection{
+    width: 80%;
+    margin: 50px auto;
+}
+.LastUl{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.LastUl li a{
+    font-size: small;
+    text-decoration: none;
+    color: #102b4e  ;
+    font-family: Arial,Helvetica,sans-serif;
+    transition: all 0.3s;
+}
+.LastUl li a:hover{
+    color: #2861a4;
+}
+@media(max-width:1450px){
+    .lastSection{
+        width: 100%;
+      padding:0 20px ;
+    }
+}

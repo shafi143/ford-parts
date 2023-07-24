@@ -1,0 +1,39 @@
+.iconDiv{
+    position: fixed;
+    
+    z-index: 1000;
+    bottom: 0%;
+    right: 0;
+    left: auto;
+    /* font-size: 30px; */
+    /* padding: 10px; */
+    margin-right: 40px;
+  
+    margin-bottom: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconDiv a{
+text-decoration: none;
+}
+#icon{
+    font-size: 50px;
+    background-color: white;
+    color: #25D366;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 7px;
+    cursor: pointer;
+    animation: blinker 1s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
+}
+
+
+@keyframes blinker {  
+  from { opacity: 1; }
+  to { opacity: 0.2; }
+}

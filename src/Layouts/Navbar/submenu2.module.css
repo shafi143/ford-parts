@@ -1,0 +1,42 @@
+.footerLInksOuter{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    background: #0c1218;
+    padding: 50px 20px 30px 20px;
+}
+.submenu2width{
+    width: 80%;
+    margin: 0px auto;
+}
+.header{
+    color: #2d96cd;
+    margin-bottom:20px;
+    font-family: FordAntenna,Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    letter-spacing: .05rem;
+}
+.ulList{
+    list-style: none;
+    /* display: grid; */
+    margin: auto;
+  
+    padding: 30px 0;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+}
+.ulList li{
+    margin-bottom: 10px;
+    padding: 0.8em 0;
+    margin: 10px auto;
+}
+.ulList li a{
+    line-height: 1em;
+    color: #2d96cd;
+ font-family: inherit;
+   
+    text-decoration: none;
+}
+.ulList li a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,28 @@
+.button-container button {
+    padding: 20px 20px;
+     font-size: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    /* border-bottom: 1px solid white; */
+  }
+  
+  .button-container button.active {
+    border-bottom: 2px solid white;
+  }
+  
+  .filter_outer{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    color: #fff;
+  }
+  .searchFords{
+    text-align: left;
+  }
+  /* .button-container{
+    border-bottom:  1px solid white;
+    width: 30%;
+    margin: auto;
+  } */
