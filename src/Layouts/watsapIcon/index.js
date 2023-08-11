@@ -5,11 +5,11 @@ import { FaWhatsapp } from "react-icons/fa";
 const index = () => {
   return (
     <div className={Style.iconDiv}>
-      <a href="https://wa.me/+923469889143" target="watsap">
+      <a href="https://wa.me/#" target="watsap">
         <FaWhatsapp
           id={Style.icon}
           as={Link}
-          to="https://wa.me/+923469889143"
+          to="https://wa.me/#"
         />
         {/* <i className="fa-brands fa-square-whatsapp" id={Style.icon} as={Link} to="https://wa.me/+923469889143"></i> */}
       </a>

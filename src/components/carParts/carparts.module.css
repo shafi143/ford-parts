@@ -1,0 +1,26 @@
+.outerCar{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    align-items: center;
+    padding: 30px 10px;
+    border: 1px solid #0276B3;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+.heading{
+    color: black;
+}
+.description{
+    color: black;
+}
+.imageBox{
+    width: 30%;
+}
+.imageBox img{
+    width: 100%;
+    height: 200px;
+}
+.detail{
+    width: 70%;
+}

@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import "./logoSlider2.css"
 import PrevButton from "./previousbutton"
 import NextButton from './nextButton';
+import { Link } from 'react-router-dom';
 const ImageSlider = ({ images }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -61,7 +62,7 @@ const ImageSlider = ({ images }) => {
     <Slider {...settings}>
    
     {images.map((image, index) => (
-      <div key={index} onClick={() => handleSlideClick(index)}>
+      <Link key={index} onClick={() => handleSlideClick(index)} to={"/carparts"} className={"linkpage"}>
         <div className="image_section">
         <img
           src={image.src}
@@ -69,11 +70,11 @@ const ImageSlider = ({ images }) => {
           className={`slider-image ${index === currentSlide ? 'active' : ''}`}
         />
         </div>
-        <p className='logo_text'>
+        <p className='logo_text' style={{color:"white"}}>
             {image.name}
         </p>
         <div className="shopnow">{image.shoping}</div>
-      </div>
+      </Link>
     ))}
   </Slider>
   </div>

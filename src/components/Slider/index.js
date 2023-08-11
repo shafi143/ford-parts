@@ -5,6 +5,7 @@ import NextButton from './nextButton';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import "./logoSlider.css"
+import { Link } from 'react-router-dom';
 
 
 const ImageSlider = ({ images }) => {
@@ -56,6 +57,7 @@ const ImageSlider = ({ images }) => {
     <Slider {...settings}>
     {images.map((image, index) => (
       <div key={index} onClick={() => handleSlideClick(index)}>
+          <Link to={`/${image.category}`} style={{textDecoration:"none"}}>
         <div className="image_section">
         <img
           src={image.src}
@@ -63,9 +65,10 @@ const ImageSlider = ({ images }) => {
           className={`slider-image ${index === currentSlide ? 'active' : ''}`}
         />
         </div>
-        <p className='logo_text'>
-            {image.name}
+        <p className='logo_text' style={{color:"black"}}>
+           {image.name}
         </p>
+        </Link>
       </div>
     ))}
   </Slider>

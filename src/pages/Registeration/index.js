@@ -94,7 +94,7 @@ const Index = () => {
       </div>
       <div className={Style.section2}>
         <h2 className={Style.headline}>Create an Account</h2>
-        <p class={Style.fontLight}>
+        <p className={Style.fontLight}>
           Welcome to FordParts.com. Our simple one-time registration process
           will make ordering parts quick and easy. Additional benefits include:
         </p>

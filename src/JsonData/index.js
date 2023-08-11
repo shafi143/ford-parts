@@ -310,5 +310,76 @@ const businessTpe = [
       value: "work",
     },
   ];
+  const PopuplarParts = [
+    {
+      src:"./images/bodyparts.jpg",
+      src2:"./images/lightning.jpg",
+      src3:"./images/oil-change-kit.jpg",
+      alt: "Body Parts",
+      name:"Body Parts ",
+      shoping:"Shop Now",
+      category:"bodyparts",
+      price:100,
+      description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac justo tincidunt, tincidunt odio ac, posuere felis."
+    },
+    {
+      src:"./images/lightning.jpg",
+      src2:"./images/lightning.jpg",
+      src3:"./images/lightning.jpg",
+      
+      alt: "Lightning",
+      name:"Lightning",
+      category:"Lightning",
+      shoping:"Shop Now",
+      price:100,
+      description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac justo tincidunt, tincidunt odio ac, posuere felis."
+    },
+    {
+      src:"./images/oil-change-kit.jpg",
+      src2:"./images/oil-change-kit.jpg",
+      src3:"./images/oil-change-kit.jpg",
+      alt: "Oil Change Kit",
+      name:"Oil Change Kit",
+      shoping:"Shop Now",
+      category:"oilchangekit",
+      price:100,
+      description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac justo tincidunt, tincidunt odio ac, posuere felis."
+    },
   
-  module.exports = {businessTpe,States,Question,phoneType,alternatePhone}
+    {
+      src: "./images/images4.jpg",
+      src2: "./images/images4.jpg",
+      src3: "./images/images4.jpg",
+      alt: "Love Recruitment",
+      name:"Batteries",
+      shoping:"Shop Now",
+      category:"batteries",
+      price:100,
+      description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac justo tincidunt, tincidunt odio ac, posuere felis."
+    },
+
+    {
+      src: "./images/images7.jpg",
+      src2: "./images/images7.jpg",
+      src3: "./images/images7.jpg",
+      alt: "Side Mirrors ",
+      name:"Side Mirrors ",
+      shoping:"Shop Now",
+      category:"sidemirrors",
+      price:100,
+      description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac justo tincidunt, tincidunt odio ac, posuere felis."
+    },
+    {
+      src: "./images/images8.jpg",
+      src2: "./images/images8.jpg",
+      src3: "./images/images8.jpg",
+      alt: "Sunshine Electrical & Solar Services",
+      name:"Spark Plugs",
+      shoping:"Shop Now",
+      category:"sparksplugs",
+      price:100,
+      description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac justo tincidunt, tincidunt odio ac, posuere felis."
+    },
+    
+  ];
+  module.exports = {businessTpe,States,Question,phoneType,alternatePhone,PopuplarParts}

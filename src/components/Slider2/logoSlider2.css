@@ -14,6 +14,9 @@
   /* .slick-slide {
    
   } */
+  .linkpage{
+    text-decoration: none;
+  }
   .slick-dots li button:before{
     font-size: 14px;
 }
@@ -144,6 +147,9 @@
 }
 .slider2 .slick-dots li.slick-active button:before{
   color: #fff !important;
+}
+.logo_text{
+  color: white;
 }
 @media(max-width:1700px){
   .slider-prev{

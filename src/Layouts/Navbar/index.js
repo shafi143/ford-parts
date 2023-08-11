@@ -220,7 +220,7 @@ const CancelMenu1=()=>{
    
     <div id={Style.menu1}>
       <ul className={Style.navFirstSection} >
-      <i class="fa-solid fa-xmark" id={Style.cancel} onClick={CancelMenu1}></i>
+      <i className="fa-solid fa-xmark" id={Style.cancel} onClick={CancelMenu1}></i>
       
         <li className={Style.logo}>
           <Link to={"/"}> <img src="./images/logo.svg" alt="" /></Link>
@@ -255,10 +255,10 @@ const CancelMenu1=()=>{
       {/* second section */}
       {icon2? 
       <i className="fa-solid fa-gears" id={Style.menu2icon} onClick={menuSecond}></i>
-      // <i class="fa-solid fa-list" ></i>
+      // <i className="fa-solid fa-list" ></i>
       :null}
       <ul className={Style.navSecondSection} id={Style.menu2}>
-      {/* <i class="fa-solid fa-xmark" id={Style.cancel} onClick={CancelMenu2}></i> */}
+      {/* <i className="fa-solid fa-xmark" id={Style.cancel} onClick={CancelMenu2}></i> */}
         <li>
           {" "}
           <Link to="#">

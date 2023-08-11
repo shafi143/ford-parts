@@ -9,77 +9,9 @@ import Slider  from '../../components/Slider'
 import Slider2  from '../../components/Slider2'
 import Filter from "../../components/filter3"
 // import { useEffect, useState } from "react"
+import {PopuplarParts} from "../../JsonData/index"
 
-const Index = () => {
-  const images = [
-    {
-      src:"./images/bodyparts.jpg",
-      alt: "Body Parts",
-      name:"Body Parts ",
-      shoping:"Shop Now"
-    },
-    {
-      src:"./images/lightning.jpg",
-      alt: "Lightning",
-      name:"Lightning",
-      shoping:"Shop Now"
-    },
-    {
-      src:"./images/oil-change-kit.jpg",
-      alt: "Oil Change Kit",
-      name:"Oil Change Kit",
-      shoping:"Shop Now"
-    },
-    // {
-    //   src:"./images/images1.jpg",
-    //   alt: "Artmarkets ",
-    //   name:"Interior Accessories ",
-    //   shoping:"Shop Now"
-    // },
-    // {
-    //   src: "./images/images2.jpg",
-    //   alt: "Caltex",
-    //   name:"Wiper Blades  ",
-    //   shoping:"Shop Now"
-    // },
-    // {
-    //   src:"./images/images3.jpg",
-    //   alt: "Broaster Chicken",
-    //   name:"Air Filters ",
-    //   shoping:"Shop Now"
-    // },
-    {
-      src: "./images/images4.jpg",
-      alt: "Love Recruitment",
-      name:"Batteries",
-      shoping:"Shop Now"
-    },
-    // {
-    //   src: "./images/images5.jpg",
-    //   alt: "DC Estimation Construction Services ",
-    //   name:"Exterior Accessories ",
-    //   shoping:"Shop Now"
-    // },
-    // {
-    //   src: "./images/images6.jpg",
-    //   alt: "Leading Edge Carpentry Services",
-    //   name:"Oil Filters",
-    //   shoping:"Shop Now"
-    // },
-    {
-      src: "./images/images7.jpg",
-      alt: "Side Mirrors ",
-      name:"Side Mirrors ",
-      shoping:"Shop Now"
-    },
-    {
-      src: "./images/images8.jpg",
-      alt: "Sunshine Electrical & Solar Services",
-      name:"Spark Plugs",
-      shoping:"Shop Now"
-    },
-    
-  ];
+const Index = () => {  
   const cars=[
     {
       src:"./images/ford-escape-2019.jpg",
@@ -153,7 +85,7 @@ const Index = () => {
     </div>
     <div className={Style.slider}>
       <h2 className={Style.heading}>Popular Parts</h2>
-<Slider images={images}/>
+<Slider images={PopuplarParts}/>
 </div>
 <div className={Style.boxOuter}>
 <div className={Style.box}>

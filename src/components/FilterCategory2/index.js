@@ -30,7 +30,7 @@ const App = () => {
     <div className="filter_outer">
       <div className='searchFords'>
         
-        <h2><i class="fa fa-search" aria-hidden="true" style={{marginRight:"8px"}}></i>Search Ford Parts
+        <h2><i className="fa fa-search" aria-hidden="true" style={{marginRight:"8px"}}></i>Search Ford Parts
 
 </h2>
       </div>

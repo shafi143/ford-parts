@@ -360,8 +360,8 @@ const Jsoncheck = () => {
     fetchData();
   }, []);
 
-  const uniqueYears = [...new Set(data.map((data) => data.year))];
-  const makes = [...new Set(data.map((data) => data.make))];
+  const uniqueYears = [...new Set(data.map((data,index) =>({year:data.year,key :index}) ))];
+  const makes = [...new Set(data.map((data, index) => ({ key: index, make: data.make })))];
 
   const handleYearChange = (event) => {
     setSelectedYear(event.target.value);
@@ -381,7 +381,7 @@ const Jsoncheck = () => {
     const filteredModels = data.filter(
       (item) => item.year === selectedYear && item.make === event.target.value
     );
-    const uniqueModels = [...new Set(filteredModels.map((item) => item.model))];
+    const uniqueModels = [...new Set(filteredModels.map((item,index) =>({model:item.model,key:index}) ))];
     setModels(uniqueModels);
     if (event.target.value === "Select make") {
       setModelDisabled(true);

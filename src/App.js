@@ -1,30 +1,37 @@
 import Navbar from "./Layouts/Navbar";
 import "./App.css"
-import FirstSection from "./pages/LandingFirst"
+import "./spinner.css"
+// import FirstSection from "./pages/LandingFirst"
 import Footer from "./Layouts/Footer"
 import { BrowserRouter ,Routes ,Route } from 'react-router-dom'
 import WatsapIcon from "./Layouts/watsapIcon" 
-import ProductPage from "./pages/productPage"
-import Registeration from "./pages/Registeration"
-import Jsoncheck from "./pages/jsoncheck";
-import StoreData from "./pages/storeData";
-import DetailPage from "./pages/detailPage";
-import ScrollToTop from "./scrollTTop";
 
+import ScrollToTop from "./scrollTTop";
+import React, { Suspense } from 'react';
+const Home = React.lazy(()=>import("./pages/LandingFirst"))
+const Registeration = React.lazy(()=>import("./pages/Registeration"))
+const Jsoncheck = React.lazy(()=>import("./pages/jsoncheck"))
+const StoreData = React.lazy(()=>import("./pages/storeData"))
+const DetailPage = React.lazy(()=>import("./pages/detailPage"))
+const ProductPage = React.lazy(()=>import("./pages/ProductDetailPage"))
+const CarPage = React.lazy(()=>import("./pages/CarPage"))
 function App() {
   return (
     <>
     <BrowserRouter>
     <ScrollToTop/>
     <Navbar/>
+    <Suspense fallback={<div class="loading-spinner"></div>}>
     <Routes>
-      <Route path="/" element={<FirstSection/>}/>
-      <Route path="/product-page" element={<ProductPage/>}/>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/:category" element={<ProductPage/>}/>
       <Route path="/registeration" element={<Registeration/>}/>
+      <Route path="/carparts" element={<CarPage/>}/>
       <Route path="/apiintegration" element={<Jsoncheck/>}/>
       <Route path="/storedata" element={<StoreData/>}/>
       <Route path="/detail/:id" element={<DetailPage/>}/>
     </Routes>
+    </Suspense>
     <WatsapIcon/>
     <Footer/>
     </BrowserRouter>
