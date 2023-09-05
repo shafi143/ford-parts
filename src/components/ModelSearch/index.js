@@ -127,7 +127,7 @@ const Index = () => {
     fetchData();
   }, []);
 
-  const uniqueYears = [...new Set(post.map((post) => post.year))];
+  const uniqueYears = [...new Set(post.map((post,index) => post.year,))];
   const makes = [...new Set(post.map((post) => post.make))];
 
   const handleSubmit = (event) => {
@@ -165,7 +165,7 @@ const Index = () => {
     <>
       {" "}
       <form style={{ margin: "0", width: "100%" }} onSubmit={handleSubmit}>
-        <div className={Style.model}>
+        <div className={Style.model} id={Style.modelgrid}>
           <select
             name="model"
             id="model"

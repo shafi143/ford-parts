@@ -1,0 +1,170 @@
+.slick-slide {
+    /* opacity: 0.5; */
+    width: 300px;
+  }
+  
+  .slick-active {
+    opacity: 1;
+  }
+  
+  /* .slick-current {
+    transform: scale(1.5);
+    z-index: 1;
+  } */
+  /* .slick-slide {
+   
+  } */
+  .slick-dots li button:before{
+    font-size: 14px;
+}
+.slick-dots li.slick-active button:before{
+      color: #000 !important;
+
+  }
+  .slick-initialized .slick-slide {
+    display: block;
+  
+    
+    
+    height: 300px;
+    width: auto !important;
+    margin-right: 20px;
+    display: flex;
+    /* align-items: center; */
+    transition: all 0.3s;
+}
+/* .slick-initialized .slick-slide:hover{
+} */
+.image_section{
+    border-radius: 10px;
+    /* padding: 20px 0; */
+    /* border: 1px solid #4a6ec9; */
+    overflow: hidden;
+}
+/* .image_section:hover{
+    
+    background-color: #4a6ec9;
+} */
+
+.slick-slide img {
+    display: block;
+    width: 280.7px;
+    aspect-ratio: auto 159.7 / 220;
+    height: 250px;
+    transition: all 0.5s;
+}
+/* .slick-slide img:hover{
+    transform: scale(1.1);
+} */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+
+.slider-next {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    width: 40px;
+    top: 38%;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    right: -5%;
+    font-size: 50px;
+    color: #102b4e;
+    padding: 10px;
+    /* background-color: #4a6ec9; */
+}
+.slider-prev{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    top: 38%;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    left: -5%;
+    font-size: 50px;
+    color: #102b4e;
+    /* background-color: #4a6ec9; */
+    padding: 10px;
+    z-index: 50;
+  } 
+
+
+/* .slider-prev:hover,
+.slider-next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+} */
+
+.slider-prev:focus,
+.slider-next:focus {
+  outline: none;
+}
+.logo_text{
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+}
+.shopnow{
+  font-family: FordAntennaCondMd, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: #0276B3;
+  letter-spacing: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 20px;
+}
+@media(max-width:1700px){
+  .slider-prev{
+    left: 0% ;
+  }
+  .slider-next{
+    right: 0 ;
+  }
+}
+@media(max-width:650px){
+  /* .slick-initialized .slick-slide{
+    width: 200px !important;
+    height: 220px !important;
+  } */
+  .slick-dots{
+    display: none !important;
+  }
+  .slider-prev{
+    top: 20%;
+    font-size: 40px;
+  }
+  .slider-next{
+    top: 20%;
+    font-size: 40px;
+  }
+}

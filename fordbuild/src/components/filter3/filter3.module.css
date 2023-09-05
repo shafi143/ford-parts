@@ -1,0 +1,44 @@
+.button_container button {
+    padding: 20px 20px;
+     font-size: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #0276B3;
+    /* border-bottom: 1px solid white; */
+  }
+  
+  .button_container button.active {
+    border-bottom: 2px solid #102B4E;
+    color: #102B4E;
+  }
+  
+  .filter_outer{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    color: #fff;
+    background-color: #f8f8f8;
+    padding-bottom: 30px;
+  }
+  .searchFords{
+    text-align: left;
+  }
+  /* .button-container{
+    border-bottom:  1px solid white;
+    width: 30%;
+    margin: auto;
+  } */
+  .heading{
+    color: #102B4E;
+    font-weight: 100%;
+    font-family: FordAntennaCondMd, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.42857143;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    width: 100%;
+  }

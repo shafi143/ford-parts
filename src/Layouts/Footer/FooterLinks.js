@@ -73,7 +73,7 @@ const Index = (props) => {
     const list2=[
         {
             name:"Create Account",
-            link:"#"
+            link:"/registeration"
         },
         {
             name:"Sign In",
