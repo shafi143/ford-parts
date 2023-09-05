@@ -1,22 +1,22 @@
 import React,{useState,useEffect,useRef} from "react";
 import Style from "./navbar.module.css";
 import { Link } from "react-router-dom";
-import Submenu from "./Submenu"
+// import Submenu from "./Submenu"
 import Submenu2 from "./Submenu2"
-import { FaBars,    FaShoppingCart, FaUser, } from "react-icons/fa";
+import { FaBars,        FaShoppingCart,  } from "react-icons/fa";
 
 
 const Index = () => {
   
   // const [isOpen, setIsOpen] = useState(false);
-  const [showSubMenu, setShowSubMenu] = useState(false);
+  // const [showSubMenu, setShowSubMenu] = useState(false);
   const [showSubMenu2, setShowSubMenu2] = useState(false);
   const [icon1 ,setIcons1]=useState(true)
   const [icon2 ,setIcons2]=useState(true)
  
   
   const menuRef = useRef(null);
-
+  
   useEffect(() => {
     document.addEventListener('click', handleOutsideClick, false);
 
@@ -27,89 +27,89 @@ const Index = () => {
 
  
 
-  const handleSubMenuClick = (event) => {
-    event.stopPropagation(); // prevent click from propagating to document
-    setShowSubMenu(!showSubMenu);
-    setShowSubMenu2(false)
-  };
+  // const handleSubMenuClick = (event) => {
+  //   event.stopPropagation(); // prevent click from propagating to document
+  //   setShowSubMenu(!showSubMenu);
+  //   setShowSubMenu2(false)
+  // };
   const handleSubMenuClick2 = (event) => {
     event.stopPropagation();
-    setShowSubMenu(false);
+    // setShowSubMenu(false);
     setShowSubMenu2(!showSubMenu2);
   };
 
   const handleOutsideClick = () => {
    
-    setShowSubMenu(false);
+    // setShowSubMenu(false);
     setShowSubMenu2(false)
   }
-  const list1=[
-    {
-name:"Ford Accessories",
-link:"#"
-    },
-    {
-        name:"Body",
-        link:"#"
-},
-{
-name:"Brakes",
-link:"#"
-},
-{
-name:"Climate Control",
-link:"#"
-},
-{
-name:"Electrical",
-link:"#"
-},
-{
-name:"Engine",
-link:"#"
-},
-{
-name:"Exhaust",
-link:"#"
-},
-{
-name:"Filters",
-link:"#"
-},
-{
-name:"Fluids, Chemicals and Lubricants",
-link:"#"
-},
-{
-name:"Fuel System",
-link:"#"
-},
-{
-name:"Hardware and Fasteners ",
-link:"#"
-},
-{
-name:"Steering",
-link:"#"
-},
-{
-name:"Suspension",
-link:"#"
-},
-{
-name:"Transmission",
-link:"#"
-},
-{
-name:"Wheels and Tires",
-link:"#"
-},
-{
-name:"Wiper and Washer",
-link:"#"
-},
+//   const list1=[
+//     {
+// name:"Ford Accessories",
+// link:"#"
+//     },
+//     {
+//         name:"Body",
+//         link:"#"
+// },
+// {
+// name:"Brakes",
+// link:"#"
+// },
+// {
+// name:"Climate Control",
+// link:"#"
+// },
+// {
+// name:"Electrical",
+// link:"#"
+// },
+// {
+// name:"Engine",
+// link:"#"
+// },
+// {
+// name:"Exhaust",
+// link:"#"
+// },
+// {
+// name:"Filters",
+// link:"#"
+// },
+// {
+// name:"Fluids, Chemicals and Lubricants",
+// link:"#"
+// },
+// {
+// name:"Fuel System",
+// link:"#"
+// },
+// {
+// name:"Hardware and Fasteners ",
+// link:"#"
+// },
+// {
+// name:"Steering",
+// link:"#"
+// },
+// {
+// name:"Suspension",
+// link:"#"
+// },
+// {
+// name:"Transmission",
+// link:"#"
+// },
+// {
+// name:"Wheels and Tires",
+// link:"#"
+// },
+// {
+// name:"Wiper and Washer",
+// link:"#"
+// },
 
-]
+// ]
 
 
 const list2=[
@@ -217,15 +217,16 @@ const CancelMenu1=()=>{
   <FaBars id={Style.menu1icon} onClick={menuFirst}/>
   //  <i className="fa-solid fa-bars" ></i>
    :null}  
+    
    
     <div id={Style.menu1}>
       <ul className={Style.navFirstSection} >
       <i className="fa-solid fa-xmark" id={Style.cancel} onClick={CancelMenu1}></i>
       
         <li className={Style.logo}>
-          <Link to={"/"}> <img src="./images/logo.svg" alt="" /></Link>
+          <Link to={"/"}> <img src="/images/logo.svg" alt="" /></Link>
         </li>
-        <li>
+        {/* <li>
           {" "} 
           <Link to="#" onClick={handleSubMenuClick}>Shop Parts</Link>{" "}
           {showSubMenu && (
@@ -235,7 +236,7 @@ const CancelMenu1=()=>{
        
           </div>
           )}
-        </li>
+        </li> */}
         <li>
           <Link to="#" onClick={handleSubMenuClick2}>Resources</Link>
           {showSubMenu2 && (
@@ -259,11 +260,11 @@ const CancelMenu1=()=>{
       :null}
       <ul className={Style.navSecondSection} id={Style.menu2}>
       {/* <i className="fa-solid fa-xmark" id={Style.cancel} onClick={CancelMenu2}></i> */}
-        <li>
+        {/* <li>
           {" "}
           <Link to="#">
             <FaUser className={Style.icons}/>My Account
-            {/* <i className={`fa-regular fa-user `}></i> */}
+         
           </Link>{" "}
         </li>
         <li>
@@ -272,19 +273,25 @@ const CancelMenu1=()=>{
             <i className={`fa-solid fa-location-dot ${Style.icons}`}></i>Find a
             Dealer
           </Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link to="#">
             <FaBars className={Style.icons}/>My Orders
-            {/* <i className={`fa-solid fa-bars ${}`}></i> */}
+           
           </Link>
-        </li>
+        </li> */}
+           <div className={Style.callUS}>
+          <Link to={"tel:78 128 18 18 "}>
+          Call Us 78 128 18 18
+          </Link>
+          </div>
         <li>
           <Link to="#">
             <FaShoppingCart className={Style.icons}/>
             {/* <i className={`fa-solid fa-cart-shopping $`}></i> */}
           </Link>
         </li>
+        
       </ul>
       </div>
     </div>

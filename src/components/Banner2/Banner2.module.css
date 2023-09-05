@@ -1,10 +1,10 @@
 .banner2{
-    width: 80%;
-    margin: 50px auto;
+    /* width: 80%; */
+    margin: 20px auto;
     background-color: white;
     /* display: flex; */
     /* justify-content: center; */
-padding: 15px 0;
+padding: 3px 0;
     /* flex-wrap: wrap; */
     /* padding-top: 30px; */
    display: grid;
@@ -17,7 +17,7 @@ padding: 15px 0;
     
 width: auto;
 justify-content: space-between;
-    height: 72px;
+    /* height: 72px; */
     display: flex;
     align-items: center;
 }
@@ -54,4 +54,15 @@ justify-content: space-between;
     margin: 0px 15px 0px 5px;
     width: 40px;
     vertical-align: middle;
+}
+@media(max-width:1400px){
+    .banner2{
+        margin: 0 auto;
+    }
+    .text_outer{
+        padding: 10px 0;
+    }
+    .arrowIcon{
+        padding: 12px;
+    }
 }

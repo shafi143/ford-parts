@@ -1,6 +1,6 @@
 
 import Style from "./Landing.module.css"
-import Banner1 from "../../components/Banner1"
+// import Banner1 from "../../components/Banner1"
 import Banner2 from "../../components/Banner2"
 // import FilterCategory from '../filtersCategory'
 import FilterCategory2 from '../../components/FilterCategory2'
@@ -9,46 +9,11 @@ import Slider  from '../../components/Slider'
 import Slider2  from '../../components/Slider2'
 import Filter from "../../components/filter3"
 // import { useEffect, useState } from "react"
-import {PopuplarParts} from "../../JsonData/index"
+import {PopuplarParts,cars} from "../../JsonData/index"
+// import VinLookup from "../../utils/api"
 
 const Index = () => {  
-  const cars=[
-    {
-      src:"./images/ford-escape-2019.jpg",
-      alt: "Ford Escape 2019 ",
-      name:"Ford Escape 2019 ",
-    },
-    {
-      src:"./images/forde-edge-2017.jpg",
-      alt: "Ford Edge 2017",
-      name:"Ford Edge 2017",
-    },
-    {
-      src:"./images/ford-explorer-2019.jpg",
-      alt: "Ford Explorer 2019",
-      name:"Ford Explorer 2019 ",
-    },
-    {
-      src:"./images/ford-focus-2017.jpg",
-      alt: "Ford Focus 2017",
-      name:"Ford Focus 2017 ",
-    },
-    {
-      src:"./images/ford-fusion-2017.jpg",
-      alt: "Ford Fusion 2017",
-      name:"Ford Fusion 2017",
-    },
-    {
-      src:"./images/ford-F150.jpg",
-      alt: "Ford F150 2017 ",
-      name:"Ford F150 2017",
-    },
-    {
-      src:"./images/ford-Transit-2017.jpg",
-      alt: "Ford Transit 2017",
-      name:"Ford Transit 2017 ",
-    },
-  ]
+
   // const [data, setData] = useState([]);
 
   
@@ -71,7 +36,7 @@ const Index = () => {
     <>
     <div className={Style.boxOuter}>
     <div className={Style.box}>
-        <Banner1/>
+        {/* <Banner1/> */}
         <Banner2/>
         <div className={Style.slider} style={{color:"white",width:"100% "}}>
       {/* <h2 className={Style.heading} style={{color:"white"}}>Car's Models</h2> */}
@@ -83,7 +48,7 @@ const Index = () => {
 
     </div>
     </div>
-    <div className={Style.slider}>
+    <div className={Style.slider} style={{marginBottom:"50px"}}>
       <h2 className={Style.heading}>Popular Parts</h2>
 <Slider images={PopuplarParts}/>
 </div>
@@ -96,6 +61,7 @@ const Index = () => {
     </div>
     </div>
 <Filter/>
+{/* <VinLookup/> */}
 {/* <div className={Style.motarcarftsection}>
   <img src="./images/Motorcraft.jpg" alt="" />
   <p>Actually, they do make 'em like they used to.</p>

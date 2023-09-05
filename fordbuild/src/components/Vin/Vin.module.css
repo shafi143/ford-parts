@@ -1,0 +1,61 @@
+.vin{
+    margin-top: 40px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.selectyear{
+    padding: 10px 30px;
+        border-radius: 7px;
+        font-size: 20px;
+        height: 50px;
+        width: 250px;
+}
+
+.searchCatalog{
+    background-color: #0276b3;
+    border: 0;
+    border-radius: 1px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+   
+    font-size: 20px;
+    /* height: 5rem!important; */
+    letter-spacing: .15rem;
+   
+    margin: 0;
+    padding: 0 1.8rem;
+    
+}
+.disabled_button{
+    background-color: #145c84!important;
+    border: 0;
+    border-radius: 1px;
+    cursor:not-allowed !important;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+   
+    font-size: 20px;
+    /* height: 5rem!important; */
+    letter-spacing: .15rem;
+   width: 250px;
+   height: 50px;
+    margin: 0;
+    padding: 0 1.8rem;
+}
+.searchCatalog:hover{
+background-color: white;
+color: #0276b3;
+}
+.lastContent{
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+}

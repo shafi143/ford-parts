@@ -1,50 +1,86 @@
-import React,{useState} from 'react'
-import Style from "./Vin.module.css"
+import React, { useState } from 'react';
+import Style from "./Vin.module.css";
+import performVinLookup from '../../utils/api'; // Import the API function
 
 const Index = () => {
-    const [inputValue, setInputValue] = useState("");
-    const [inputDisbaled,setInputDisbaled]=useState(true)
-const [buttonDisabled, setButtonDisabled] = useState(true);
-const handleVinChange=(event)=>{
+  const [inputValue, setInputValue] = useState("");
+  const [inputDisabled, setInputDisabled] = useState(true);
+  const [buttonDisabled, setButtonDisabled] = useState(true);
+  const [response, setResponse] = useState(null);
+  const [error, setError] = useState(null);
+  const [vin,setVin]=useState("")
+  
+  const handleVinChange = (event) => {
     const value = event.target.value;
-    if (!value){
-        setInputDisbaled(true)
-    }else{
+    setVin(value)
+ 
+    setInputDisabled(!value);
+    
+  };
 
-        setInputDisbaled(false);
-    }
-    
-}
-const handleInputChange = (event) => {
-    
+  const handleInputChange = (event) => {
     const value = event.target.value;
     setInputValue(value);
     setButtonDisabled(value === "");
   };
+
+  const handleSearch = async (e) => {
+    e.preventDefault();
+ 
+    try {
+      const vinData = await performVinLookup(vin);
+      console.log(vinData.manufacturer)
+      if (vinData.manufacturer === 'Ford') {
+      setResponse(vinData);
+
+    }
+    else{
+     
+   setResponse(null)
+        setError(null);
+      }
+    } catch (error) {
+      setError(error.message);
+      setResponse(null);
+    }
+  };
+
   return (
     <>
-    <div className={Style.vin}>
-        <input type="text" placeholder='Enter Vin Number'
+      <form className={Style.vin} onSubmit={handleSearch}>
+        <input
+          type="text"
+          placeholder='Enter Vin Number'
           className={Style.selectyear}
-        onChange={handleVinChange}
+          onChange={handleVinChange}
+          value={vin}
         />
         <input
-        type="text"
-        className={Style.selectyear}
-        placeholder="Enter Keyword/Part Number"
-        value={inputValue}
-        onChange={handleInputChange}
-        disabled={inputDisbaled}
-      />
-      <button  disabled={buttonDisabled}
-      className={buttonDisabled ? Style["disabled_button"] : Style["searchCatalog"]  }
-      >
-        Search Catalog{" "}
-      </button>
-    </div>
-    <p className={Style.lastContent}>We recommend Searching by VIN when ordering parts.</p>
+          type="text"
+          className={Style.selectyear}
+          placeholder="Enter Keyword/Part Number"
+          value={inputValue}
+          onChange={handleInputChange}
+          disabled={inputDisabled}
+        />
+        <button
+          disabled={buttonDisabled}
+          className={buttonDisabled ? Style["disabled_button"] : Style["searchCatalog"]}
+        >
+          Search Catalog
+        </button>
+      </form>
+      
+      <p className={Style.lastContent}>We recommend Searching by VIN when ordering parts.</p>
+      {error && <p>Error: {error}</p>}
+      {response && (
+        <div>
+          <h2>Response:</h2>
+          <pre>{JSON.stringify(response, null, 2)}</pre>
+        </div>
+      )}
     </>
   )
 }
 
-export default Index
+export default Index;

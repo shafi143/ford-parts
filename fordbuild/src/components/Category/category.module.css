@@ -1,0 +1,32 @@
+.gridcategory{
+    /* width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 50px auto; */
+    display: flex;
+    flex-flow: row wrap;
+    font-family: FordAntennaCondMd,Arial,Helvetica,sans-serif;
+   width: 100%;
+   margin: 50px auto;
+    justify-content: center;
+    gap: 20px;
+}
+.innerGrid{
+    width: 20rem;
+}
+.innerGrid img{
+width: 100%;
+height: 15rem;
+}
+.innerGrid{
+    box-shadow: 0 1rem 1rem 0 rgba(0,0,0,.1);
+}
+.categoryText{
+    padding: 10px;
+    color: black;
+    text-align: left;
+}
+.categoryText:hover{
+    color: #0276B3;
+}

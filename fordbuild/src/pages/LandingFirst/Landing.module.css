@@ -1,0 +1,62 @@
+.box{
+    
+    width: 80% ;
+    margin: auto;
+    padding:150px 20px 50px 20px;
+ 
+}
+.boxOuter{
+    background-color: #102b4e;
+}
+.headings{
+    font-size: 3rem;
+    color: white;
+    margin-top: 3.2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.slider{
+    width: 80%;
+    margin: 50px auto;
+}
+.heading{
+    color: #102B4E;
+    font-weight: 100%;
+    font-family: FordAntennaCondMd, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.42857143;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    width: 100%;
+    
+}
+.motarcarftsection{
+    width: 80%;
+    margin: 0px auto 50px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #edf1f2;
+}
+.motarcarftsection img{
+    width: 500px;
+}
+.motarcarftsection p{
+    font-size: 24px;
+    color: #646464;
+}
+@media(max-width:950px){
+    .box{
+        padding: 50px 0;
+    }
+    .headings{
+        font-size: 2rem;
+    }
+}
+@media(max-width:650px){
+    .box{
+        width: 90%;
+    }
+}

@@ -5,6 +5,18 @@
     background: white;
     z-index: 100;
 }
+.callUS{
+    position: absolute;
+    /* float: right; */
+    /* margin-left: auto; */
+    right: 10%;
+    top: 7%;
+}
+.callUS a{
+    text-decoration: none;
+    color: #0276B3;
+    font-weight: 500;
+}
 .outerNav{
     width: 80%;
     display: flex;
@@ -211,5 +223,9 @@
         height: 60vh;
      overflow-y: scroll;
      grid-template-columns: 1fr ;
+}
+.callUS{
+    position: relative;
+    margin-left: 17px;
 }
 }

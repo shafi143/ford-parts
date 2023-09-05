@@ -1,0 +1,160 @@
+.Bannner{
+    height: 444px;
+    min-height: 276px;
+    padding-top: 11px;
+    background: url("../../../public/images/registerbackground.avif");
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    max-height: 600px;
+    position: relative;
+    background-repeat: no-repeat;
+   
+    padding: 50px;
+}
+.bannerOuter{
+    padding: 100px 0;
+}
+.bannerText{
+    color: white;
+}
+.heading1{
+    font-family: "FordAntenna ExtraLight",Arial,Helvetica,sans-serif;
+    color: #fff;
+    line-height: 56px;
+   
+    font-weight: 400;
+    font-size: 40px ;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
+.heading2{
+    font-family: "FordAntenna ExtraLight",Arial,Helvetica,sans-serif;
+    color: #fff;
+    line-height: 56px;
+    font-size: 48px;
+    
+   
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
+.headline{
+    font-weight: 300;
+    font-size: 36px;
+    margin-top: 1em;
+}
+.fontLight{
+    line-height: 25px;
+    font-size: 10px;
+    color: #333
+}
+.section2{
+    width: 80%;
+    margin: auto;
+}
+.listUl{
+    font-size: 10px;
+    margin-left: 25px;
+}
+.listUl li{
+    line-height: 15px;
+
+}
+form{
+    margin-top: 40px;
+    width: 70%;
+}
+form select{
+    width: 100%;
+    height: 46px;
+    font-size: 18px;
+    color: #646464; 
+    border-radius: 5px;
+    border: 1px solid #646464;
+    cursor: pointer;
+}
+form select option{
+    cursor: pointer;
+    line-height: 30px;
+    color: #0276B3;
+}
+form select option:hover{
+    color: black;
+}
+
+.inputFLex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+.gridthree{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+form input[type="checkbox"]{
+    width: 14px;
+    margin-right: 5px;
+}
+#labelFlex{
+    display: flex;
+    align-items: center;
+    color: #646464;
+    cursor: pointer;
+}
+.CreateAccount{
+    background-color: #0276b3;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    height: 50px;
+   border: 1px solid #0276B3;
+    font-size: 14px;
+    /* height: 5rem!important; */
+    letter-spacing: .15rem;
+   box-shadow: 1px 2px 5px 0 rgba(0,0,0,.2)!important;
+    margin: 10px 0;
+    padding: 0 50px;
+    transition: all 0.3s;
+    
+}
+.CreateAccount:hover{
+    background-color: white;
+    color: #0276b3;
+    border: 1px solid #333;
+    }
+    .showPassword{
+        color: #0276b3;
+        cursor: pointer;
+    }
+    @media(max-width:1400px){
+        form{
+            width: 80%;
+        }
+        .bannerOuter{
+            padding:  0;
+        }
+    }
+    @media(max-width:950px){
+        form{
+            width: 100%;
+        }
+    }
+    @media(max-width:800px){
+        .inputFLex{
+            grid-template-columns: 1fr;
+        }
+        .gridthree{
+            grid-template-columns: 1fr;
+        }
+        .heading1{
+            font-size: 25px;
+            line-height: 40px;
+        }
+        .heading2{
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    
