@@ -75,7 +75,7 @@ const Index = () => {
       {error && <p>Error: {error}</p>}
       {response && (
         <div>
-          <h2>Response:</h2>
+          <h2>Responses:</h2>
           <pre>{JSON.stringify(response, null, 2)}</pre>
         </div>
       )}
